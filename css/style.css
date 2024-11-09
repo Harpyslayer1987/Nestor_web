@@ -6271,7 +6271,7 @@ a.close.disabled {
     align-items: center;
     justify-content: center;
     width: 15%;
-    color: #fff;
+    color: #3B3572;
     text-align: center;
     opacity: 0.5;
     transition: opacity 0.15s ease;
@@ -6288,7 +6288,7 @@ a.close.disabled {
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-    color: #fff;
+    color: #3B3572;
     text-decoration: none;
     outline: 0;
     opacity: 0.9;
@@ -6341,7 +6341,7 @@ a.close.disabled {
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #f40868;
     background-clip: padding-box;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -6367,7 +6367,7 @@ a.close.disabled {
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #fff;
+    color: #3B3572;
     text-align: center;
 }
 
@@ -9648,12 +9648,11 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-    color: #ba8b00 !important;
-}
-
-a.text-primary:hover,
-a.text-primary:focus {
-    color: #fc8807 !important;
+    background: linear-gradient(to bottom, #5252AF, #f40868);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    /* Para navegadores con prefijo -webkit */
 }
 
 .text-secondary {
@@ -9966,7 +9965,7 @@ h6,
 }
 
 .carousel-indicators .active {
-    background-color: forestgreen;
+    background-color: #5252AF;
 }
 
 @media (max-width: 991.98px) {
