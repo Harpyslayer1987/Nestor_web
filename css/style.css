@@ -2511,21 +2511,26 @@ fieldset:disabled a.btn {
     font-weight: bold;
     text-transform: uppercase;
     padding: 15px 30px;
-    color: #212529;
-    background-color: goldenrod;
+    color: #dee2e6;
+    background: linear-gradient(to bottom, #5252AF, #f40868);
+    /* Degradado */
     border: none;
     border-radius: 30px;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 0 0 20px goldenrod rgba(251, 255, 0, 0.822);
+    box-shadow: 0 0 20px rgba(82, 82, 175, 0.6), 0 0 40px rgba(82, 82, 175, 0.4);
+    /* Sombra azul */
     transition: box-shadow 0.4s ease;
 }
 
 .btn-primary:hover {
     color: #212529;
-    background-color: gold;
-    border-color: goldenrod;
-    box-shadow: 0 0 10px goldenrod rgba(255, 255, 0, 0.8);
+    background: linear-gradient(to bottom, #5252AF, #f40868);
+    /* Degradado en hover */
+    box-shadow: 0 0 30px rgba(82, 82, 175, 0.8), 0 0 60px rgba(82, 82, 175, 0.6);
+    /* Aumenta la sombra azul para el efecto luminoso */
+    border-color: transparent;
+    /* Sin borde en hover */
 }
 
 .btn-primary:focus,
@@ -6469,7 +6474,10 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: goldenrod !important;
+    background: linear-gradient(to bottom, #5252AF, #f40868) !important;
+    /* Fondo degradado */
+    box-shadow: 0 0 20px rgba(82, 82, 175, 0.6), 0 0 40px rgba(82, 82, 175, 0.4);
+    /* Sombra azul para efecto de brillo */
 }
 
 a.bg-primary:hover,
@@ -9901,7 +9909,16 @@ h6,
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: goldenrod;
+    color: transparent;
+    /* Oculta el color base del texto */
+    background: linear-gradient(to bottom, #5252AF, #f40868);
+    /* Degradado en el texto */
+    -webkit-background-clip: text;
+    /* Recorta el degradado en el texto (para navegadores WebKit) */
+    background-clip: text;
+    /* Recorta el degradado en el texto */
+    text-shadow: 0 0 10px rgba(82, 82, 175, 0.6), 0 0 20px rgba(82, 82, 175, 0.4);
+    /* Sombra azul para el brillo */
 }
 
 @media (max-width: 991.98px) {
