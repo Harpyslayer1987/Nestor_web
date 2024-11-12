@@ -9660,11 +9660,13 @@ button.bg-dark:focus {
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
+    font-family: "Tw Cen MT Condensed", sans-serif;
     /* Para navegadores con prefijo -webkit */
 }
 
 .text-secondary {
     color: #131313 !important;
+    font-family: "Tw Cen MT ", sans-serif;
 }
 
 a.text-secondary:hover,
