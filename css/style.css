@@ -9660,7 +9660,6 @@ button.bg-dark:focus {
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-    font-family: "Tw Cen MT Condensed", sans-serif;
     /* Para navegadores con prefijo -webkit */
 }
 
@@ -10064,7 +10063,7 @@ h6,
 
 .team-carousel .owl-dot.active,
 .testimonial-carousel .owl-dot.active {
-    background: goldenrod;
+    background: #5252AF;
 }
 
 .team-item .team-overlay {
