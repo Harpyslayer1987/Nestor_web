@@ -169,7 +169,7 @@ sup {
 }
 
 a {
-    color: goldenrod;
+    color: rgb(107, 1, 139);
     text-decoration: none;
     background-color: transparent;
 }
@@ -4963,8 +4963,11 @@ a.badge:focus {
 }
 
 .badge-primary {
-    color: #212529;
-    background-color: goldenrod;
+    background: linear-gradient(to bottom, #5252AF, #f40868);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    /* Para navegadores con prefijo -webkit */
 }
 
 a.badge-primary:hover,
